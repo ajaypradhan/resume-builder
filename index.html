@@ -1,21 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
 
     <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+      integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Resume Builder</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center my-2">Resume Builder</h1>
+
+      <div class="row">
+        <div class="col-md-6 col-xs-6">
+            <!-- first column -->
+          <h3>Personal Information</h3>
+          <div class="form-group">
+            <label for="full-name">Full Name: *</label>
+            <input type="text" id="full-name" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact: *</label>
+            <input type="text" id="contact" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="eamilID">Email ID: *</label>
+            <input type="email" id="eamilID" class="form-control" />
+          </div>
+          <div class="form-group">
+            <label for="location">Location: *</label>
+            <input
+              type="text"
+              id="location"
+              class="form-control"
+              placeholder="ex: city, state"
+            />
+          </div>
+          <h4>Links</h4>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="website">Personal website: *</label>
+              <input type="text" id="website" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="linkedint">LinkedIn: *</label>
+              <input type="text" id="linkedin" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="github">Github:</label>
+              <input type="text" id="github" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="hackerrank">Hackerrank:</label>
+              <input type="text" id="hackerrank" class="form-control" />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="leetcode">Leetcode:</label>
+              <input type="text" id="leetcode" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="codechef">Codechef:</label>
+              <input type="text" id="codechef" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="codeforces">Codeforces:</label>
+              <input type="text" id="codeforces" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="anyother">Other:</label>
+              <input type="text" id="anyother" class="form-control" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-6">
+            
+        </div>
+      </div>
+    </div>
+
+    <!-- Java script -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
