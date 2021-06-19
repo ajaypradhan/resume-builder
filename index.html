@@ -89,6 +89,49 @@
             </div>
           </div>
           <h4>Education</h4>
+          <div class="form-group">
+            <div class="row">
+              <!-- first column of data -->
+              <div class="col-md-6">
+                <label for="">Timeline:</label>
+                <input
+                  type="text"
+                  class="form-control timeline-education"
+                  placeholder="month,20xx - month,20xx"
+                />
+                <label for="">Class/Degree:</label>
+                <input
+                  type="text"
+                  class="form-control class"
+                  placeholder="X/XII/college degree"
+                />
+              </div>
+
+              <!-- second column data -->
+              <div class="col-md-6">
+                <label for="">School/College:</label>
+                <input
+                  type="text"
+                  class="form-control school-name"
+                  placeholder="Name of school/college"
+                />
+                <label for="">Percentage:</label>
+                <input
+                  type="text"
+                  class="form-control percentage"
+                  placeholder="percentage"
+                />
+              </div>
+            </div>
+            <label for="">Other Information : </label>
+            <textarea
+              class="form-control about-work"
+              placeholder="other Information like curricular activities and event in which you have taken part"
+            ></textarea>
+            <div class="container text-center mt-2" id="add-EQ-button">
+              <button class="btn btn-primary btn-sm">Add New</button>
+            </div>
+          </div>
         </div>
         <!-- second column -->
         <div class="col-md-6 col-xs-6">
@@ -147,6 +190,9 @@
           </div>
           <h4>Achievements</h4>
         </div>
+      </div>
+      <div class="container text-center m-2" id="generate-resume">
+          <button class="btn btn-dark btn-sm">Generate Resume</button>
       </div>
     </div>
 
