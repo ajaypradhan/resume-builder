@@ -3,3 +3,9 @@
     padding: 0;
     margin: 0;
 }
+
+.work-section{
+    border: 3px solid #E1E8EB;
+    border-radius: 5px;
+    padding: 5px;
+}
