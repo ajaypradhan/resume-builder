@@ -15,187 +15,199 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Resume Builder</title>
   </head>
+
   <body>
     <div class="container">
       <h1 class="text-center my-2">Resume Builder</h1>
-
       <div class="row">
-        <!-- first column -->
-        <div class="col-md-6 col-xs-6">
-          <h3>Personal Information</h3>
-          <div class="form-group">
-            <label for="full-name">Full Name: *</label>
-            <input type="text" id="full-name" class="form-control" />
-          </div>
-          <div class="form-group">
-            <label for="contact">Contact: *</label>
-            <input type="text" id="contact" class="form-control" />
-          </div>
-          <div class="form-group">
-            <label for="eamilID">Email ID: *</label>
-            <input type="email" id="eamilID" class="form-control" />
-          </div>
-          <div class="form-group">
-            <label for="location">Location: *</label>
-            <input
-              type="text"
-              id="location"
-              class="form-control"
-              placeholder="ex: city, state"
-            />
-          </div>
-          <h4>Links</h4>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="website">Personal website: *</label>
-                <input type="text" id="website" class="form-control" required />
-              </div>
-              <div class="form-group">
-                <label for="linkedint">LinkedIn: *</label>
-                <input
-                  type="text"
-                  id="linkedin"
-                  class="form-control"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <label for="github">Github:</label>
-                <input type="text" id="github" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="hackerrank">Hackerrank:</label>
-                <input type="text" id="hackerrank" class="form-control" />
-              </div>
+        <div class="col-md-6">
+          <!-- left column -->
+          <div id="personal-info">
+            <h3>Personal Information</h3>
+            <div class="form-group">
+              <label for="full-name">Full Name: *</label>
+              <input type="text" id="full-name" class="form-control" required />
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="leetcode">Leetcode:</label>
-                <input type="text" id="leetcode" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="codechef">Codechef:</label>
-                <input type="text" id="codechef" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="codeforces">Codeforces:</label>
-                <input type="text" id="codeforces" class="form-control" />
-              </div>
-              <div class="form-group">
-                <label for="anyother">Other:</label>
-                <input type="text" id="anyother" class="form-control" />
-              </div>
+            <div class="form-group">
+              <label for="phoneNo">Phone No.: *</label>
+              <input type="text" id="phoneNo" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="emailID">Email Id: *</label>
+              <input type="text" id="emailID" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="location">Location: *</label>
+              <input
+                type="text"
+                id="location"
+                class="form-control"
+                required
+                placeholder="ex: city, state"
+              />
             </div>
           </div>
-          <h4>Education</h4>
-          <div class="form-group">
+          <div id="social-links">
+            <h3>Links</h3>
             <div class="row">
-              <!-- first column of data -->
               <div class="col-md-6">
-                <label for="">Timeline:</label>
-                <input
-                  type="text"
-                  class="form-control timeline-education"
-                  placeholder="month,20xx - month,20xx"
-                />
-                <label for="">Class/Degree:</label>
-                <input
-                  type="text"
-                  class="form-control class"
-                  placeholder="X/XII/college degree"
-                />
+                <div class="form-group">
+                  <label for="website">Personal website: </label>
+                  <input type="text" id="website" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="github">Github: </label>
+                  <input type="text" id="github" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="codechef">Codechef: </label>
+                  <input type="text" id="codechef" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="codeforces">Codeforces: </label>
+                  <input type="text" id="codeforces" class="form-control" />
+                </div>
               </div>
-
-              <!-- second column data -->
               <div class="col-md-6">
-                <label for="">School/College:</label>
-                <input
-                  type="text"
-                  class="form-control school-name"
-                  placeholder="Name of school/college"
-                />
-                <label for="">Percentage:</label>
-                <input
-                  type="text"
-                  class="form-control percentage"
-                  placeholder="percentage"
-                />
+                <div class="form-group">
+                  <label for="linkedin">LinkedIn: </label>
+                  <input type="text" id="linkedin" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="hackerrank">Hackerrank: </label>
+                  <input type="text" id="hackerrank" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="leetcode">Leetcode: </label>
+                  <input type="text" id="leetcode" class="form-control" />
+                </div>
+                <div class="form-group">
+                  <label for="other">Other: *</label>
+                  <input type="text" id="other" class="form-control" />
+                </div>
               </div>
             </div>
-            <label for="">Other Information : </label>
-            <textarea
-              class="form-control about-work"
-              placeholder="other Information like curricular activities and event in which you have taken part"
-            ></textarea>
-            <div class="container text-center mt-2" id="add-EQ-button">
-              <button class="btn btn-primary btn-sm">Add New</button>
+          </div>
+          <div id="education">
+            <h3>Education Qualification</h3>
+            <div class="form-group" id = 'educationQualificationSection'>
+              <div class="work-section">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Timeline:</label>
+                    <input
+                      type="text"
+                      class="form-control timeline"
+                      placeholder="month,20xx - month,20xx"
+                    />
+                    <label for="">Company:</label>
+                    <input
+                      type="text"
+                      class="form-control company"
+                      placeholder="name of company"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Type:</label>
+                    <input
+                      type="text"
+                      class="form-control type-of-job"
+                      placeholder="Internship, full time, WFH"
+                    />
+                    <label for="">Designation:</label>
+                    <input
+                      type="text"
+                      class="form-control designation"
+                      placeholder="designation"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="">About Internship/ Work : </label>
+                    <textarea
+                      class="form-control about-work"
+                      placeholder="about the job"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center mt-2" id="add-WE-button">
+                <button
+                  onclick="addNewWeSection()"
+                  class="btn btn-primary btn-sm"
+                >
+                  Add New
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <!-- second column -->
-        <div class="col-md-6 col-xs-6">
-          <h3>Other Information</h3>
-
-          <!-- objective -->
-          <div class="form-group">
-            <label for="objective">Objective: *</label>
-            <textarea id="objective" class="form-control" required></textarea>
-          </div>
-
-          <!-- working Experience/internships -->
-          <h4>Experience/Internship</h4>
-          <div class="form-group">
-            <div class="row">
-              <!-- first column of data -->
-              <div class="col-md-6">
-                <label for="">Timeline:</label>
-                <input
-                  type="text"
-                  class="form-control timeline"
-                  placeholder="month,20xx - month,20xx"
-                />
-                <label for="">Company:</label>
-                <input
-                  type="text"
-                  class="form-control company"
-                  placeholder="name of company"
-                />
-              </div>
-
-              <!-- second column data -->
-              <div class="col-md-6">
-                <label for="">Type:</label>
-                <input
-                  type="text"
-                  class="form-control type-of-job"
-                  placeholder="Internship, full time, WFH"
-                />
-                <label for="">Designation:</label>
-                <input
-                  type="text"
-                  class="form-control designation"
-                  placeholder="designation"
-                />
-              </div>
-            </div>
-            <label for="">About Internship/ Work : </label>
-            <textarea
-              class="form-control about-work"
-              placeholder="about the job"
-            ></textarea>
-            <div class="container text-center mt-2" id="add-WE-button">
-              <button class="btn btn-primary btn-sm">Add New</button>
+        <div class="col-md-6">
+          <div id="objective">
+            <h3>Objective</h3>
+            <div class="form-group">
+              <label for="objective">Objective: *</label>
+              <textarea id="objective" class="form-control" required></textarea>
             </div>
           </div>
-          <h4>Achievements</h4>
+          <div id="work-experience">
+            <h3>Experience/Internship</h3>
+            <div class="form-group" id = 'workExperienceSection'>
+              <div class="work-section">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="">Timeline:</label>
+                    <input
+                      type="text"
+                      class="form-control timeline"
+                      placeholder="month,20xx - month,20xx"
+                    />
+                    <label for="">Company:</label>
+                    <input
+                      type="text"
+                      class="form-control company"
+                      placeholder="name of company"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="">Type:</label>
+                    <input
+                      type="text"
+                      class="form-control type-of-job"
+                      placeholder="Internship, full time, WFH"
+                    />
+                    <label for="">Designation:</label>
+                    <input
+                      type="text"
+                      class="form-control designation"
+                      placeholder="designation"
+                    />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label for="">About Internship/ Work : </label>
+                    <textarea
+                      class="form-control about-work"
+                      placeholder="about the job"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="container text-center mt-2" id="add-WE-button">
+                <button
+                  onclick="addNewWeSection()"
+                  class="btn btn-primary btn-sm"
+                >
+                  Add New
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="container text-center m-2" id="generate-resume">
-          <button class="btn btn-dark btn-sm">Generate Resume</button>
       </div>
     </div>
-
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
